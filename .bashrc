@@ -116,19 +116,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-# self-defined aliases
-alias code='cd ~/Dropbox/it/CodingSpace'
-# This alias was added to replace the original rm command of linux.
-# With trash-cli package, rm will move files to trash bin instead of permanent delete -> safer
+#self-define alias
 alias off='shutdown 0'
 alias rs='reboot'
 alias q="exit"
-alias rm=trash 
-alias giang='code ; cd GiangGO'
+alias rm=trash
 alias odir='nautilus'
 alias cpl='g++ -g -o run '
 alias clera='clear'
-alias mars='java -jar /home/dangne/Dropbox/it/CodingSpace/Mars4_5.jar'
-
-export PATH="$PATH:"/opt/microchip/xc8/v2.10/bin"":'/home/lnakhuong/Downloads/scilab-6.0.2/bin/' 

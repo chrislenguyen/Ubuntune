@@ -7,8 +7,7 @@ call vundle#begin()
     Plugin 'vim-airline/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
     Plugin 'tpope/vim-fugitive'
-    Plugin 'whatyouhide/vim-gotham'
-    Plugin 'takac/vim-hardtime'
+    Plugin 'morhetz/gruvbox'
     Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on   
@@ -16,7 +15,8 @@ filetype plugin indent on
 
 
 "Colors
-syntax enable 
+syntax enable
+
 
 
 "Spaces & Tabs
@@ -34,9 +34,8 @@ set showcmd
 set lazyredraw
 set showmatch
 set background=dark
-
-colorscheme gotham256
-let g:airline_theme='gotham'
+colorscheme gruvbox 
+let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 
 
