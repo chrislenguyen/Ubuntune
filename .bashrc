@@ -1,7 +1,11 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
+107
+￼
+Run this code in the current terminal
 
+PROMPT_DIRTRIM=3
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -115,6 +119,8 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+#self-preference
+PROMPT_DIRTRIM=2
 
 #self-define alias
 alias off='shutdown 0'
