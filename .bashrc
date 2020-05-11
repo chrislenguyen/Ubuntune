@@ -117,10 +117,11 @@ if ! shopt -oq posix; then
 fi
 #self-preference
 PROMPT_DIRTRIM=2
-export PATH="$PATH:~/development/flutter/bin"
+export PATH="$PATH:~/dev/flutter/bin"
+export PATH="$PATH:~/Scilab/bin"
+export PATH="$PATH:~/AndroidStudio/android-studio/bin"
 
 #self-define alias
-alias android='./Downloads/android-studio/bin/studio.sh'
 alias off='shutdown 0'
 alias rs='reboot'
 alias q="exit"
@@ -128,3 +129,22 @@ alias rm=trash
 alias odir='nautilus'
 alias cpl='g++ -g -o run '
 alias clera='clear'
+alias coro='curl https://corona-stats.online/Vietnam'
+alias ju='cd ~/study/scientificResearch/UPDATED-NLP-COURSE/UPDATED_NLP_COURSE; conda activate nlp_course ;jupyter notebook'
+alias slp='systemctl suspend -i'
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/khuong/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/khuong/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/khuong/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/khuong/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
